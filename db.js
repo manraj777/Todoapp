@@ -12,11 +12,11 @@ const mongoose = require("mongoose")
  
 mongoose.connect("mongodb+srv://manraj:Manraj%40777@cluster0.9mtiogx.mongodb.net/Todoapp")
 const todoschema = mongoose.Schema({
-    title: string, 
-    description: string,
-    complete: boolean
+    title: String, 
+    description: String,
+    complete: Boolean
 })
-const todo = mongooes.model('todos', todoschema);
+const todo = mongoose.model('todos', todoschema);
 module.exports = {
     todo
 }

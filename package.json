@@ -9,6 +9,7 @@
   "author": "manraj",
   "license": "ISC",
   "dependencies": {
+    "cros": "^1.0.1",
     "expess": "^0.0.1-security",
     "express": "^4.19.2",
     "mongoose": "^8.4.4",

@@ -14,7 +14,10 @@ mongoose.connect("mongodb+srv://manraj:Manraj%40777@cluster0.9mtiogx.mongodb.net
 const todoschema = mongoose.Schema({
     title: String, 
     description: String,
-    complete: Boolean
+    complete: {
+        type: Boolean,
+        default: false
+    }
 })
 const todo = mongoose.model('todos', todoschema);
 module.exports = {
